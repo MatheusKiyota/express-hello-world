@@ -34,12 +34,22 @@ app.get("/pokemons", (req, res) => {
         "Krabby / Kingler"
     ];
     res.json(pokemons);
+
+    
+  });
+  
+  app.post("/series", (req, res) => {
+  const series = [
+      "breaking bad",
+      "Better Call Saul",
+      "Homens da Lei"
+  ];
+  res.json(series);
 });
+  
 
 
-
-
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, () => console.log(`Projeto funcionando na porta 3001`));
 
 const html = `
 <!DOCTYPE html>
