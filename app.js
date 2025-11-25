@@ -12,8 +12,13 @@ app.get('/req', (req, res) => {
     res.send('Yo!')
 })
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.get("/meunome", (req, res) => {
+    res.send("Meu nome é Matheus Leite Kiyota");
+});
 
+
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 const html = `
 <!DOCTYPE html>
@@ -64,4 +69,4 @@ const html = `
     </section>
   </body>
 </html>
-`
+`;
